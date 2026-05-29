@@ -1,0 +1,1195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f3efef;
+}
+
+/* HEADER */
+header {
+    background: white;
+    padding: 20px 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-icons img {
+    width: 40px;
+    height: 40px;
+
+    object-fit: cover;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.header-icons img:hover {
+    transform: scale(1.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #d67b21;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+/* SEARCH BOX */
+.search-box{
+    width: 520px;
+    height: 58px;
+
+    background: white;
+
+    border: 2px solid #f0b500;
+    border-radius: 40px;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+}
+
+/* Ô input */
+.search-box input{
+    flex: 1;
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    padding: 0 25px;
+
+    font-size: 18px;
+}
+
+/* Nút tìm kiếm */
+.search-btn{
+    width: 75px;
+    height: 100%;
+
+    border: none;
+
+    background: #f0b500;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* Hover nút */
+.search-btn:hover{
+    background: #ff9900;
+}
+
+/* Icon kính lúp */
+.search-btn img{
+    width: 28px;
+    height: 28px;
+
+    object-fit: cover;
+}
+.header-icons {
+    display: flex;
+    gap: 30px;
+
+    font-size: 38px;
+}
+
+.header-icons i {
+    cursor: pointer;
+}
+
+
+/* NAVBAR */
+nav{
+    background: #ff8500;
+    padding: 0 60px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    list-style: none;
+}
+
+nav ul li{
+    transition: 0.3s;
+}
+
+/* Link menu */
+nav ul li a{
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    display: block;
+
+    padding: 20px 30px;
+
+    transition: 0.3s;
+}
+
+/* Hover nguyên ô */
+nav ul li:hover{
+    background: #e46f00;
+}
+
+/* Chữ nổi bật */
+nav ul li:hover a{
+    color: #fff3c4;
+
+    text-shadow: 0 0 10px rgba(255,255,255,0.8);
+}
+/* DROPDOWN */
+.dropdown{
+    position: relative;
+}
+
+/* Link sản phẩm */
+.dropdown a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Hình mũi tên */
+.dropdown a img{
+    width: 18px;
+    height: 18px;
+
+    transition: 0.3s;
+}
+
+/* Menu sổ xuống */
+.dropdown-menu{
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    min-width: 220px;
+
+    background: #ff8500;
+
+    list-style: none;
+
+    display: none;
+
+    z-index: 1000;
+}
+
+/* Item menu con */
+.dropdown-menu li a{
+    display: block;
+
+    padding: 15px 20px;
+
+    color: white;
+
+    font-size: 20px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+/* Hover menu con */
+.dropdown-menu li:hover{
+    background: #e46f00;
+}
+
+/* Hover hiện menu */
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+/* Xoay mũi tên */
+.dropdown:hover a img{
+    transform: rotate(180deg);
+}
+
+/* SECTION */
+.section {
+    width: 90%;
+
+    margin: 40px auto;
+
+    background: white;
+
+    padding: 25px;
+}
+
+.section-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.section-top h2 {
+    font-size: 28px;
+}
+
+.arrows {
+    display: flex;
+    gap: 20px;
+
+    font-size: 32px;
+
+    cursor: pointer;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+}
+
+.product{
+    width: 200px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    color: black;
+
+    transition: 0.3s;
+}
+
+/* Hover */
+.product:hover{
+
+    transform: translateY(-8px);
+
+}
+
+/* Hình */
+.product img{
+    width: 160px;
+    height: 230px;
+
+    object-fit: cover;
+
+    background: #ddd;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+/* Hover hình */
+.product:hover img{
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+
+}
+
+/* Tên */
+.product h3{
+    margin-top: 15px;
+
+    font-size: 20px;
+}
+
+
+/* BOX GIÁ */
+.price-box{
+    margin-top: 10px;
+}
+
+/* GIÁ CŨ */
+.old-price{
+    color: #888;
+
+    font-size: 18px;
+
+    text-decoration: line-through;
+
+    margin-bottom: 5px;
+}
+
+/* GIÁ MỚI */
+.new-price{
+    color: #f26f2b;
+
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .product-list {
+        gap: 30px;
+    }
+
+}
+/* BANNER */
+.banner{
+    width: 90%;
+
+    height: 420px;
+
+    margin: 40px auto;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 25px;
+
+    background: #ddd;
+}
+
+/* SLIDER */
+.banner-slider{
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+
+/* ITEM */
+.banner-slide{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    opacity: 0;
+
+    transition: 0.5s;
+}
+
+/* ACTIVE */
+.banner-slide.active{
+    opacity: 1;
+}
+
+/* ẢNH */
+.banner-slide img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/* NÚT */
+.banner-btn{
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 60px;
+    height: 60px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(0,0,0,0.5);
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+/* HOVER */
+.banner-btn:hover{
+    background: rgba(0,0,0,0.8);
+
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* ICON */
+.banner-btn img{
+    width: 28px;
+    height: 28px;
+
+    object-fit: cover;
+}
+
+/* LEFT */
+.prev{
+    left: 20px;
+}
+
+/* RIGHT */
+.next{
+    right: 20px;
+}
+
+/* =========================
+   TRANG LIÊN HỆ
+========================= */
+
+/* TITLE */
+.contact-title{
+    font-size: 60px;
+
+    color: #ff8500;
+
+    margin: 40px 60px;
+}
+
+/* CONTAINER */
+.contact-container{
+    width: 100%;
+
+    padding: 0 60px 60px;
+
+    display: flex;
+
+    gap: 50px;
+}
+
+/* FORM */
+.contact-form{
+    flex: 1;
+
+    background: white;
+
+    border: 1px solid #efc7a5;
+
+    border-radius: 40px;
+
+    padding: 50px;
+}
+
+/* TITLE FORM */
+.contact-form h2{
+    font-size: 40px;
+
+    margin-bottom: 40px;
+
+    padding-left: 20px;
+
+    border-left: 5px solid #ff8500;
+}
+
+/* ROW */
+.row{
+    display: flex;
+
+    gap: 30px;
+}
+
+/* INPUT */
+.input-group{
+    width: 100%;
+
+    margin-bottom: 35px;
+}
+
+.input-group label{
+    display: block;
+
+    margin-bottom: 12px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    color: #444;
+}
+
+.input-group input{
+    width: 100%;
+    height: 70px;
+
+    border: 1px solid #efc7a5;
+    border-radius: 50px;
+
+    padding: 0 25px;
+
+    font-size: 18px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.input-group input:focus{
+    border-color: #ff8500;
+}
+
+/* TEXTAREA */
+.input-group textarea{
+    width: 100%;
+    height: 220px;
+
+    border: 1px solid #efc7a5;
+    border-radius: 25px;
+
+    padding: 25px;
+
+    font-size: 18px;
+
+    outline: none;
+
+    resize: none;
+
+    transition: 0.3s;
+}
+
+.input-group textarea:focus{
+    border-color: #ff8500;
+}
+
+/* BUTTON */
+.send-btn{
+    width: 260px;
+    height: 70px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background: #ff8500;
+
+    color: white;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.send-btn:hover{
+    background: #e46f00;
+
+    transform: scale(1.03);
+}
+
+.send-btn img{
+    width: 25px;
+    height: 25px;
+}
+
+/* RIGHT */
+.contact-right{
+    width: 450px;
+}
+
+/* INFO */
+.contact-info{
+    background: #a7582a;
+
+    color: white;
+
+    border-radius: 40px;
+
+    padding: 45px;
+
+    margin-bottom: 40px;
+}
+
+.contact-info h2{
+    font-size: 38px;
+
+    margin-bottom: 45px;
+}
+
+/* ITEM */
+.info-item{
+    display: flex;
+
+    gap: 20px;
+
+    margin-bottom: 40px;
+}
+
+.info-item img{
+    width: 45px;
+    height: 45px;
+
+    object-fit: cover;
+}
+
+.info-item span{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.info-item p{
+    margin-top: 10px;
+
+    font-size: 24px;
+
+    line-height: 1.5;
+}
+
+/* MAP */
+.map{
+    width: 100%;
+    height: 300px;
+
+    overflow: hidden;
+
+    border-radius: 35px;
+}
+
+.map img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+.map{
+    display: block;
+
+    transition: 0.3s;
+}
+
+.map:hover{
+    transform: scale(1.02);
+}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+
+    .contact-container{
+        flex-direction: column;
+    }
+
+    .contact-right{
+        width: 100%;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+}
+
+/* =========================
+   TIN TỨC
+========================= */
+
+/* TITLE */
+.news-title{
+    font-size: 55px;
+
+    color: #ff8500;
+
+    margin: 40px 60px;
+}
+
+/* CONTAINER */
+.news-container{
+    width: 100%;
+
+    padding: 0 60px 60px;
+
+    display: flex;
+
+    gap: 40px;
+}
+
+/* LEFT */
+.news-left{
+    flex: 1;
+}
+
+/* BIG NEWS */
+.big-news{
+    background: white;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    margin-bottom: 40px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.big-news:hover{
+    transform: translateY(-5px);
+}
+
+.big-news img{
+    width: 100%;
+    height: 400px;
+
+    object-fit: cover;
+}
+
+.news-content{
+    padding: 35px;
+}
+
+.news-content span{
+    color: #999;
+
+    font-size: 18px;
+}
+
+.news-content h2{
+    margin: 20px 0;
+
+    font-size: 38px;
+}
+
+.news-content p{
+    font-size: 20px;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+.news-content a{
+    text-decoration: none;
+
+    background: #ff8500;
+
+    color: white;
+
+    padding: 12px 25px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.news-content a:hover{
+    background: #e46f00;
+}
+
+/* GRID */
+.news-grid{
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 30px;
+}
+
+/* CARD */
+.news-card{
+    background: white;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.news-card:hover{
+    transform: translateY(-5px);
+}
+
+.news-card img{
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 25px;
+}
+
+.card-content span{
+    color: #888;
+}
+
+.card-content h3{
+    font-size: 24px;
+
+    margin: 15px 0 20px;
+
+    line-height: 1.5;
+}
+
+.card-content a{
+    text-decoration: none;
+
+    color: #ff8500;
+
+    font-weight: bold;
+}
+
+/* RIGHT */
+.news-right{
+    width: 350px;
+
+    background: white;
+
+    border-radius: 30px;
+
+    padding: 35px;
+
+    height: fit-content;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.news-right h2{
+    font-size: 35px;
+
+    margin-bottom: 35px;
+
+    color: #ff8500;
+}
+
+/* SIDE */
+.side-news{
+    display: flex;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.side-news:hover{
+    transform: translateX(5px);
+}
+
+.side-news img{
+    width: 110px;
+    height: 90px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+.side-news h4{
+    font-size: 18px;
+
+    margin-bottom: 10px;
+
+    line-height: 1.5;
+}
+
+.side-news span{
+    color: #888;
+}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+
+    .news-container{
+        flex-direction: column;
+    }
+
+    .news-right{
+        width: 100%;
+    }
+
+}
+
+@media(max-width:800px){
+
+    .news-grid{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================
+   GIỚI THIỆU
+========================= */
+
+/* TITLE */
+.about-title{
+    font-size: 55px;
+
+    color: #ff8500;
+
+    margin: 40px 60px;
+}
+
+/* CONTAINER */
+.about-container{
+    width: 100%;
+
+    padding: 0 60px 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 50px;
+}
+
+/* LEFT */
+.about-left{
+    flex: 1;
+}
+
+.about-left img{
+    width: 100%;
+
+    border-radius: 30px;
+
+    object-fit: cover;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* RIGHT */
+.about-right{
+    flex: 1;
+}
+
+.about-right h2{
+    font-size: 45px;
+
+    margin-bottom: 25px;
+}
+
+.about-right p{
+    font-size: 22px;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+
+    color: #444;
+}
+
+/* BOXES */
+.about-boxes{
+    display: flex;
+
+    gap: 25px;
+
+    margin-top: 40px;
+}
+
+/* ITEM */
+.about-box{
+    flex: 1;
+
+    background: white;
+
+    border-radius: 25px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.about-box:hover{
+    transform: translateY(-8px);
+}
+
+.about-box h3{
+    font-size: 40px;
+
+    color: #ff8500;
+
+    margin-bottom: 10px;
+}
+
+.about-box span{
+    font-size: 20px;
+
+    color: #555;
+}
+
+/* MISSION */
+.mission{
+    width: 90%;
+
+    margin: 0 auto 60px;
+
+    background: #ff8500;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 70px 40px;
+
+    border-radius: 35px;
+}
+
+.mission h2{
+    font-size: 45px;
+
+    margin-bottom: 25px;
+}
+
+.mission p{
+    font-size: 24px;
+
+    line-height: 1.7;
+}
+
+/* TEAM */
+.team-section{
+    width: 100%;
+
+    padding: 0 60px 80px;
+}
+
+.team-section h2{
+    font-size: 50px;
+
+    color: #ff8500;
+
+    margin-bottom: 40px;
+}
+
+/* TEAM CONTAINER */
+.team-container{
+    display: flex;
+
+    gap: 30px;
+}
+
+/* CARD */
+.team-card{
+    flex: 1;
+
+    background: white;
+
+    border-radius: 30px;
+
+    padding: 35px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.team-card:hover{
+    transform: translateY(-8px);
+}
+
+.team-card img{
+    width: 170px;
+    height: 170px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    margin-bottom: 25px;
+}
+
+.team-card h3{
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+.team-card span{
+    color: #777;
+
+    font-size: 20px;
+}
+
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+
+    .about-container{
+        flex-direction: column;
+    }
+
+    .team-container{
+        flex-direction: column;
+    }
+
+}
+
+@media(max-width:800px){
+
+    .about-boxes{
+        flex-direction: column;
+    }
+
+}
